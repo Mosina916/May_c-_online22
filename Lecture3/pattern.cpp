@@ -8,12 +8,18 @@ int main(){ //start
 
 // ========================
 	while(rowno<=n){//2<=5
-			int coun=1;
+			// int coun=1;
+		int colno=1;
 
 	// loop
-			while(coun<=rowno){
+			// while(coun<=rowno){
+			// 	cout<<"*"<<" ";
+			// 	coun=coun+1;//2
+
+			// }
+		while(colno<=rowno){
 				cout<<"*"<<" ";
-				coun=coun+1;//2
+				colno=colno+1;//2
 
 			}
 
