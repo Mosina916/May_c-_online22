@@ -4,14 +4,14 @@ int main(){ //start of program -->comments
 
 	// &&, ||, ! 
 
-	// if(marks>=90 and marks<=100){
+// 	if(marks>=90 and marks<=100){
 
 // if(marks>=90<=100){-->wrong
-	// if(marks>=90 && marks<=100){
-	// 	cout<<"Grade A"<<endl;
-	// }
-	// else if(marks>=80 and marks<=89){
-	// 	cout<<"Grade B"<<endl;
+// 	if(marks>=90 && marks<=100){
+// 		cout<<"Grade A"<<endl;
+// 	}
+// 	else if(marks>=80 and marks<=89){
+// 		cout<<"Grade B"<<endl;
 
 	// }
 
