@@ -38,7 +38,5 @@ int main(){ //start of program -->comments
 
 
 
-
-
 	return 0;//end terminate the program
 }
