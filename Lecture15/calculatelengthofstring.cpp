@@ -3,7 +3,6 @@ using namespace std;
 int lengthofarr(char arr[]){
 	int i=0;
 	int c=0;
-
 // loop
 	while(arr[i]!='\0'){
 		c++;//5
@@ -12,9 +11,6 @@ int lengthofarr(char arr[]){
 	}
 	return c;
 	
-
-
-
 }
 // int arr[]={5,3,6,7,5,8};
 int main(){
