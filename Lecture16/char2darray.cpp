@@ -19,15 +19,6 @@ int main(){
 	// cout<<arr[3]<<endl;
 	
 
-
-
-
-
-
-
-	
-
-
 	// // print 2d array
 
 	// for(int i=0;i<=3;i++){
@@ -47,8 +38,8 @@ int main(){
 
 	};
 
-	// cout<<(void*)arr[0]<<endl;//DOGBCATUPHON
-	// cout<<(void*)arr[1]<<endl;//CATUPHON
+	// cout<<arr[0]<<endl;//DOGBCATUPHON
+	// cout<<arr[1]<<endl;//CATUPHON
 	// cout<<arr[2]<<endl;//PHON
 
 	for(int i=0;i<=2;i++){
