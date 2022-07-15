@@ -1,5 +1,9 @@
 #include<iostream>
 using namespace std;
+// int*arr
+// int arr[100];
+
+
 void waveprint(int arr[100][100],int trows,int tcols){
 	for(int colno=0;colno<=tcols-1;colno++){
 		if(colno%2==0){
@@ -21,8 +25,6 @@ void waveprint(int arr[100][100],int trows,int tcols){
 
 	}
 	
-
-
 
 }
 
