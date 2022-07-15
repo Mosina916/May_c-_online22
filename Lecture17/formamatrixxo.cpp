@@ -29,9 +29,6 @@ void formamatrixxo(char arr[100][100],int trows,int tcols){
 	}
 	er--;
 
-	
-	
-
 	// ist col
 	
 
@@ -52,11 +49,6 @@ void formamatrixxo(char arr[100][100],int trows,int tcols){
 
 	}
 
-
-	
-
-	
-	
 	
 
 }

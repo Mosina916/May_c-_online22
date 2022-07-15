@@ -21,7 +21,7 @@ void spriarlprint(int arr[100][100],int trows,int tcols){
 	}
 	ec--;
 	// last row
-	if(sr<er){
+	if(sr<=er){
 		for(int k=ec;k>=sc;k--){
 		cout<<arr[er][k]<<" ";
 
@@ -30,7 +30,7 @@ void spriarlprint(int arr[100][100],int trows,int tcols){
 
 	}
 	// ist col
-	if(sc<ec){
+	if(sc<=ec){
 
 	for(int l=er;l>=sr;l--){//3
 		cout<<arr[l][sc]<<" ";
