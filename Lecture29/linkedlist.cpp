@@ -166,6 +166,12 @@ void deleteattail(node*&head,node*&tail){
 	}
 
 }
+// 1 2 3 4 5
+
+// int*ptr=new int;
+// delete ptr;
+// node*n=new node(data);
+// delete n;
 
 
 void deleteanypost(node*&head,node*&tail,int position){
@@ -198,6 +204,90 @@ void deleteanypost(node*&head,node*&tail,int position){
 
 
 
+// bool searchinllitervively(node*head,int key){
+// 	node*temp=head;
+// 	while(temp!=NULL){
+// 		if(temp->d==key){
+// 		return true;
+// 	}
+// 	temp=temp->next;
+
+// 	}
+// 	return false;
+	
+
+
+// }
+
+bool searchinllrec(node*head,int key){
+	// base case
+	if(head==NULL){
+		return false;
+	}
+
+
+	// rec case
+	if(head->d==key){
+		return true;
+	}
+	return searchinllrec(head->next,key);
+	
+
+
+}
+
+// to find mid point of ll
+int midpointofll(node*head){
+	node*slow=head;
+	// node*fast=head;//even k case mai 2nd mid wala deta hai
+	node*fast=head->next;//even k case mai ist mid wala deta hai
+
+
+while(fast!=NULL and fast->next!=NULL){
+	slow=slow->next;
+	fast=fast->next->next;
+
+}
+return slow->d;
+	
+
+}
+
+// node* midpointofll(node*head){
+// 	node*slow=head;
+// 	node*fast=head;
+
+
+// while(fast->next!=NULL){//odd length ka ll ho
+// 	slow=slow->next;
+// 	fast=fast->next->next;
+
+// }
+// return slow;//300 adress return 
+	
+
+// }
+
+
+void bubblesort(node*head){
+	for(int i=0;i<=lengthofllrec(head)-2;i++){
+		for(node*j=head;j->next!=NULL;j=j->next){
+			if(j->d>j->next->d){//95>
+				swap(j->d,j->next->d);
+
+			}
+
+
+		}
+			
+
+	}
+
+}
+
+
+// merge two sorted ll using rec
+
 
 
 
@@ -216,25 +306,32 @@ int main(){
 	insertatanypost(head,tail,45,0);
 
 	insertatanypost(head,tail,95,3);
-
 	printll(head);
-	cout<<endl;
+		cout<<endl;
+	// cout<<midpointofll(head)<<endl;
 
-	cout<<lengthofllrec(head)<<endl;
+		bubblesort(head);
 
-	// deleteatfront(head,tail);
-	// deleteattail(head,tail);
+		printll(head);
+		cout<<endl;
+	// cout<<endl;
+	// int key;
+	// cin>>key;
+	// if(searchinllitervively(head,key)==true){
+	// 	cout<<"key is present"<<endl;
+	// }
+	// else{
+	// 	cout<<"key is not present"<<endl;
+	// }
 
-	
 
-	deleteanypost(head,tail,2);
-	printll(head);
-	cout<<endl;
+	// if(searchinllrec(head,key)==true){
+	// 	cout<<"key is present"<<endl;
+	// }
+	// else{
+	// 	cout<<"key is not present"<<endl;
+	// }
 
-	cout<<lengthofllrec(head)<<endl;
-
-
-	// f(n);
 
 	return 0;
 
