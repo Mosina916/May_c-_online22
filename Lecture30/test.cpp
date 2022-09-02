@@ -35,7 +35,7 @@ void insertatfront(node*&head,node*&tail,int data){
 }
 
 // push_back
-void insertattail(node*&head,node*&tail,int data){
+void insertattail(node &head,node*&tail,int data){
 	// if ll is empty
 	node*n=new node(data);
 	if(head==NULL){
