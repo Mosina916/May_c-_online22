@@ -263,9 +263,6 @@ bool searchbst(node*root,int key){
 }
 
 
-
-
-
 int main(){
 
 	// node*root=buildtree();
