@@ -54,9 +54,6 @@ int bottomup(int n,int k){
 			// if(i>=j){
 			if(i-j>=0){
 			ans+=arr[i-j];
-
-
-
 		}
 
 		}
@@ -72,9 +69,10 @@ int bottomup(int n,int k){
 		cout<<arr[i]<<" ";
 	}
 	cout<<endl;
+	int x=arr[n];
 
 	delete []arr;
-	return arr[n];
+	return x;
 
 }
 
